@@ -33,7 +33,7 @@
     }
 
     .wrap{
-      width:min(900px, 95vw);
+      width:min(980px, 96vw);
     }
 
     .card{
@@ -72,7 +72,7 @@
 
     p{
       margin:10px auto;
-      max-width:680px;
+      max-width:700px;
       color:var(--muted);
       font-size:1.03rem;
       line-height:1.7;
@@ -96,14 +96,14 @@
 
     .gallery{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));
       gap:12px;
       margin-top:12px;
     }
 
     .gallery img{
       width:100%;
-      height:220px;
+      height:240px;
       object-fit:cover;
       border-radius:14px;
       border:1px solid #ffffff2b;
@@ -130,31 +130,39 @@
       color:#b8c3ff;
       opacity:.85;
     }
+
+    @media (max-width:520px){
+      .card{padding:24px 14px}
+      .gallery img{height:210px}
+    }
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="card">
       <div class="tag">23 June • Birthday Wishes</div>
-      <h1>Happy Birthday, <span class="name">[Her Name]</span> 🎉</h1>
+      <h1>Happy Birthday, <span class="name">Teju</span> 🎉</h1>
       <div class="divider"></div>
 
       <p>
-        Wishing you a peaceful, beautiful day and a wonderful year ahead.
-        May your life be filled with happiness, good health, and success.
+        Wishing you a peaceful day and a beautiful year ahead.
+        May you always stay happy, healthy, and successful.
       </p>
-      <p>Stay blessed and keep shining. ✨</p>
+      <p>Keep smiling and take care. ✨</p>
 
       <div class="gallery-title">Memories</div>
       <div class="gallery">
-        <!-- Replace with your real photo file names -->
-        <img src="./photos/1.jpg" alt="Memory 1" />
-        <img src="./photos/2.jpg" alt="Memory 2" />
-        <img src="./photos/3.jpg" alt="Memory 3" />
-        <img src="./photos/4.jpg" alt="Memory 4" />
+        <img src="./photos/IMG-20220617-WA0073.jpg" alt="Memory 1" />
+        <img src="./photos/IMG-20220618-WA0017.jpg" alt="Memory 2" />
+        <img src="./photos/IMG_20221031_195803.jpg" alt="Memory 3" />
+        <img src="./photos/Screenshot_2022-07-05-10-14-21-355_lockscreen.jpg" alt="Memory 4" />
+        <img src="./photos/Screenshot_2022-11-05-17-02-22-846_com.whatsapp.jpg" alt="Memory 5" />
+        <img src="./photos/Snapchat-1083269426.jpg" alt="Memory 6" />
+        <img src="./photos/Snapchat-1353360104.jpg" alt="Memory 7" />
+        <img src="./photos/Snapchat-218598286.jpg" alt="Memory 8" />
       </div>
 
-      <div class="footer">— With best wishes, [Your Name]</div>
+      <div class="footer">— Best wishes, Jay</div>
       <div class="note">Sent with respect and good intentions.</div>
     </section>
   </main>
